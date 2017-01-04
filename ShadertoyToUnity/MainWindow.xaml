@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="ShadertoyToUnity" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="DragBtn" Content="DragHere" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="497" Height="171" Click="DragBtn_Click" ClipToBounds="True" SnapsToDevicePixels="True" DragOver="DragBtn_DragOver" Drop="DragBtn_Drop" DragEnter="DragBtn_DragEnter" AllowDrop="True">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
     </Grid>
 </Window>
